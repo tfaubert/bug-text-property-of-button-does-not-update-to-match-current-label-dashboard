@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Plan Dashboard - Bug: Text property of button does not update to match current label</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Test Plan Dashboard</h1>
+            <h2>Bug: Text property of button does not update to match current label</h2>
+        </header>
+        
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Test Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p class="progress-text" id="progress-text">0% Complete</p>
+            </div>
+            
+            <div class="card">
+                <h3>Test Status</h3>
+                <div class="status-grid">
+                    <div class="status-item passed">
+                        <span class="count" id="passed-count">0</span>
+                        <span class="label">Passed</span>
+                    </div>
+                    <div class="status-item failed">
+                        <span class="count" id="failed-count">0</span>
+                        <span class="label">Failed</span>
+                    </div>
+                    <div class="status-item pending">
+                        <span class="count" id="pending-count">0</span>
+                        <span class="label">Pending</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card full-width">
+                <h3>Test Cases</h3>
+                <div class="test-controls">
+                    <input type="text" id="test-input" placeholder="Add new test case...">
+                    <button id="add-test">Add Test</button>
+                </div>
+                <ul class="test-list" id="test-list">
+                    <!-- Test cases will be added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
