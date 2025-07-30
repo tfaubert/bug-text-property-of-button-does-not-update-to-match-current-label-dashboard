@@ -1,0 +1,16 @@
+{
+  "name": "bug-text-property-of-button-does-not-update-to-match-current-label-dashboard",
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
